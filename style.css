@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    scroll-behavior: smooth;
+}
+#container{
+    width: 100%;
+    height: 98vh;
+    position: relative;
+}
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.logo
+{
+    margin-left: 80px;
+    width: 100px;
+}
+ul{
+    margin-right: 50px;
+}
+.list-items{
+    list-style: none;
+    display: inline;
+    margin: 0px 20px;
+}
+.links{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.links:hover{
+    color: #ff0000;
+    text-decoration: underline;
+}
+/* .home{
+    width: 100%;
+    height: 75vh;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+ .home-content{
+    margin: 13% 0px 0px 12%;
+ }
+ #content-heading{
+    font-size: 44px;
+    font-family: "Sofadi One", system-ui;
+    margin-bottom: 20px;
+ }
+ #lname{
+    color:  goldenrod;
+    font-family: "Sofadi One", system-ui;
+ }
+ #content-para{
+    line-height: 1.6;
+    font-weight: 600;
+ }
+ #download{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 30px;
+    border-radius: 10px;
+    font-family: "Quicksand", sans-serif;
+ }
+ .home-img{
+    width: 45%;
+    height: 75%;
+    position: absolute;
+    right: 30px;
+    bottom:0px;
+ }
+ .group1
+{
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 2s;
+    /* You can name each transition to give it different values like
+    transition: bottom 2s, left 1s */
+}
+.home-img:hover #shape{
+    bottom:100px;
+}
+.home-img:hover #woman{
+    left: 35%;
+}
+.about-me{
+    margin: 30% 8% 5% 12%;
+    
+}
+.intro{
+    text-align: center;
+}
+.mainHead{
+    font-size: 40px;
+    font-family: "Sofadi One", system-ui;
+}
+#intro{
+    font-size: 20px;
+    color: green;
+}
+.about-content{
+    /* display: flex;
+    justify-content: space-between; */
+    align-items: center; 
+    margin-top: 15vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+#man{
+    width: 100%;
+}
+.about-text{
+    margin-left: 5vw;
+    width: 45%;
+    line-height: 1.6;
+    font-weight: 600;
+}
+.informations{
+    margin-top: 30px;
+}
+.infobox{
+    margin: 5px;
+}
+infobox>span{
+    margin-left:1rem;
+}
+.skills{
+    margin: 8% 8% 0px 8%;
+    /* width: 100%;s */
+}
+.skillcontent{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    column-gap: 10vw;
+    margin: 5vh 0px;
+}
+.progressbars{
+    width: 31.25vw;
+}
+.bars{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:relative;
+    padding: 1rem 0px;
+}
+.barPercent, .barHead{
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+.basebar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    position: absolute;
+    bottom:0px;
+    border-radius: 10px;
+}
+.htmlbar{
+    width: 95%;
+    height: 0.5rem;
+    background-color: #ff0000;
+}
+.cssbar{
+    width: 80%;
+    height: 0.5rem;
+    background-color: #ff0000;
+}
+.jsbar{
+    width: 90%;
+    height: 0.5rem;
+    background-color: #ff0000;
+}
+.reactbar{
+    width: 85%;
+    height: 0.5rem;
+    background-color: #ff0000;
+}
+/* .skillimg{
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+} */
+.contact{
+    margin: 8% 8% 0px 8%;
+}
+.icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+}
+.brands{
+    font-size: 30px;
+    color: black;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right, green, blue);
+}
+.icon:hover .brands{
+    color: white;
+    animation: rotate 3s;
+}
+
+footer{
+    margin-top: 8%;
+    text-align: center;
+    padding: 10px;
+}
+#copyright{
+    font-weight: 600;
+}
+.upArrow{
+    float: right;
+    margin: -30px 20px 10px 0px;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: orange;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(30deg);
+    }
+    20%{
+        transform: rotate(-30deg);
+    }
+    40%{
+        transform: rotate(30deg);
+    }
+    60%{
+        transform: rotate(-30deg);
+    }
+    80%{
+        transform: rotate(30deg);
+    }
+    100%{
+        transform: rotate(-30deg);
+    }
+}
